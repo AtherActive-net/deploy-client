@@ -40,10 +40,6 @@ const deploy = () => __awaiter(void 0, void 0, void 0, function* () {
     console.log(data.output);
 });
 function checkArgs() {
-    console.log(project);
-    console.log(branch);
-    console.log(repoCloneUrl);
-    console.log(TOKEN);
     if (!project || !branch || !repoCloneUrl || !TOKEN) {
         throw new Error("Missing arguments");
     }
