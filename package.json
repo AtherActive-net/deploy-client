@@ -1,0 +1,26 @@
+{
+  "name": "deploy-client",
+  "version": "1.0.0",
+  "description": "A client that can be used in Github Actions to call for a deploy.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy" : "node dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtherActive-net/deploy-client.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AtherActive-net/deploy-client/issues"
+  },
+  "homepage": "https://github.com/AtherActive-net/deploy-client#readme",
+  "dependencies": {
+    "@types/node": "^18.14.0",
+    "node-fetch": "^3.3.0"
+  },
+  "type" : "module"
+}
