@@ -8,12 +8,18 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 import fetch from 'node-fetch';
-const project = process.argv[2];
-const branch = process.argv[3];
-const repoCloneUrl = process.argv[4];
-const TOKEN = process.argv[5];
-const ENV = process.argv[6];
-const Url = 'https://deploy.ather.nl/api/v1/deploy';
+// const project = process.argv[2];
+// const branch = process.argv[3];
+// const repoCloneUrl = process.argv[4];
+// const TOKEN = process.argv[5];
+// const ENV = process.argv[6];
+// const Url = 'https://deploy.ather.nl/api/v1/deploy';
+const project = process.env.PROJECT;
+const branch = process.env.BRANCH;
+const repoCloneUrl = process.env.REPOCLONEURL;
+const TOKEN = process.env.TOKEN;
+const ENV = process.env.ENV_VARS;
+const Url = process.env.DEPLOY_SERVER;
 const body = {
     project: project,
     branch: branch,
